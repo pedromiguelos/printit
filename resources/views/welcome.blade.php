@@ -83,7 +83,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="http://projeto.ainet/contacts">Contactos</a>
+                    <a href="{{ url('/contacts') }}">Contactos</a>
                 </div>
             </div>
         </div>

@@ -55,10 +55,12 @@
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                <img src="uploads/profile_photos/{{Auth::user()->profile_photo}}" style="border-radius: 50%; height: 32px; width: 32px;">
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
+                                <li><a href={{ route('profile') }}>Profile</li>
                                     <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();

@@ -19,6 +19,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/profile','UserController@profile')->name('profile');
+
+Route::post('/profile','UserController@profilePhotoUpload');
 
 Route::get('/contacts', function () {
     return view('contacts');
