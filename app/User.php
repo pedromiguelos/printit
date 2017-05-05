@@ -15,8 +15,8 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
-    ];
+        'name', 'email', 'password', 'department_id', 'presentation', 'profile_url', 'phone', 
+            ];
 
     /**
      * The attributes that should be hidden for arrays.
@@ -26,4 +26,11 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    protected $attributes = [
+        'admin' => false,
+        'blocked' => false,
+        'print_evals' => 0,
+        'print_counts' => 0,
+            ];
 }

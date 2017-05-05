@@ -38,57 +38,57 @@
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('telefone') ? ' has-error' : '' }}">
-                            <label for="telefone" class="col-md-4 control-label">Telefone</label>
+                        <div class="form-group{{ $errors->has('phone') ? ' has-error' : '' }}">
+                            <label for="phone" class="col-md-4 control-label">Telefone</label>
 
                         <div class="col-md-6">
-                                <input id="telefone" type="number" class="form-control" name="telefone" value="{{ old('telefone') }}" required>
+                                <input id="phone" type="number" class="form-control" name="phone" value="{{ old('phone') }}" required>
 
-                                @if ($errors->has('telefone'))
+                                @if ($errors->has('phone'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('telefone') }}</strong>
+                                        <strong>{{ $errors->first('phone') }}</strong>
                                     </span>
                                 @endif
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('departamento') ? ' has-error' : '' }}">
-                            <label for="departamento" class="col-md-4 control-label">Departamento</label>
+                        <div class="form-group{{ $errors->has('department_id') ? ' has-error' : '' }}">
+                            <label for="department_id" class="col-md-4 control-label">Departamento</label>
 
                         <div class="col-md-6">
-                                <input id="departamento" type="number" class="form-control" name="departamento" value="{{ old('departamento') }}" required>
+                                <input id="department_id" type="number" class="form-control" name="department_id" value="{{ old('department_id') }}" required>
 
-                                @if ($errors->has('departamento'))
+                                @if ($errors->has('department_id'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('departamento') }}</strong>
+                                        <strong>{{ $errors->first('department_id') }}</strong>
                                     </span>
                                 @endif
                             </div>
                         </div>
 
-                         <div class="form-group{{ $errors->has('url_perfil') ? ' has-error' : '' }}">
-                            <label for="url_perfil" class="col-md-4 control-label">URL para perfil:</label>
+                         <div class="form-group{{ $errors->has('profile_url') ? ' has-error' : '' }}">
+                            <label for="profile_url" class="col-md-4 control-label">URL para perfil:</label>
 
                         <div class="col-md-6">
-                                <input id="url_perfil" type="url" class="form-control" name="url_perfil" value="{{ old('url_perfil') }}">
+                                <input id="profile_url" type="url" class="form-control" name="profile_url" value="{{ old('profile_url') }}">
 
-                                @if ($errors->has('url_perfil'))
+                                @if ($errors->has('profile_url'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('url_perfil') }}</strong>
+                                        <strong>{{ $errors->first('profile_url') }}</strong>
                                     </span>
                                 @endif
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('texto_pessoal') ? ' has-error' : '' }}">
-                            <label for="texto_pessoal" class="col-md-4 control-label">Texto Pessoal:</label>
+                        <div class="form-group{{ $errors->has('presentation') ? ' has-error' : '' }}">
+                            <label for="presentation" class="col-md-4 control-label">Texto Pessoal:</label>
 
                         <div class="col-md-6">
-                                <input id="texto_pessoal" type="text" maxlength="1000" class="form-control" name="texto_pessoal" value="{{ old('texto_pessoal') }}">
+                                <input id="presentation" type="text" maxlength="1000" class="form-control" name="presentation" value="{{ old('presentation') }}">
 
-                                @if ($errors->has('texto_pessoal'))
+                                @if ($errors->has('presentation'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('texto_pessoal') }}</strong>
+                                        <strong>{{ $errors->first('presentation') }}</strong>
                                     </span>
                                 @endif
                             </div>
